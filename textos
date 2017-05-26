@@ -1,0 +1,28 @@
+[1mdiff --git a/dibujarfiguras.html b/dibujarfiguras.html[m
+[1mindex cbbfdf9..b3b1f66 100644[m
+[1m--- a/dibujarfiguras.html[m
+[1m+++ b/dibujarfiguras.html[m
+[36m@@ -51,21 +51,14 @@[m
+ [m
+        var ultx = val1[contador];[m
+        var ulty = val2[contador];[m
+[31m-[m
+[31m-       alert("Valor 1 x : " + uno + "Valor 1 y : " + uno1);[m
+[31m-       alert("Valor actual x :" + ultx + "Valor actual y : " + ulty);[m
+      }[m
+ [m
+ </script>[m
+ </head>[m
+ <body onmousedown="coordenadas(event);">[m
+ <form action="#">[m
+[31m-<label for="x">X:</label><input type="text" id="x">[m
+[31m-<label for="x">y:</label><input type="text" id="y">[m
+[31m-<br>[m
+[31m-<br>[m
+[31m-[m
+[31m-ContadorXY : <input type="text" id="d" disabled>[m
+[32m+[m[32m<label for="x"></label><input type="hidden" id="x">[m
+[32m+[m[32m<label for="x"></label><input type="hidden" id="y">[m
+ <br>[m
+ Puntos : <input type="text" id="response" disabled>[m
+ <br>[m

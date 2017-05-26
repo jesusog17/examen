@@ -57,8 +57,8 @@
 </head>
 <body onmousedown="coordenadas(event);">
 <form action="#">
-<label for="x"></label><input type="hidden" id="x">
-<label for="x"></label><input type="hidden" id="y">
+<label for="x">X:</label><input type="hidded" id="x">
+<label for="x">y:</label><input type="hidded" id="y">
 <br>
 Puntos : <input type="text" id="response" disabled>
 <br>
