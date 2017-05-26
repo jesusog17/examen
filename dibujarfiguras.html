@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dibujar Figuras</title>
+<script>
+
+
+
+    function coordenadas(event)
+     {
+       x=event.clientX;
+       y=event.clientY;
+
+       var valores; valores=[];
+       var val1; val1=[];
+       var val2; val2=[];
+
+       document.getElementById("x").value = x;
+       document.getElementById("y").value = y;
+
+       document.getElementById("response").value = x + "-" + y;
+       var contador = 0;
+
+       contador = document.getElementById("c").value;
+       n2 = 1;
+       if (contador=='')
+          {
+            var contador = parseInt(n2);
+          }
+       else
+          {
+            var contador = parseInt(contador) + parseInt(n2);
+          }
+       document.getElementById("c").value = contador;
+       valores=[contador,x,y];
+
+
+
+       val1[contador] = x;
+       val2[contador] = y;
+
+
+       document.getElementById("d").value = valores;
+
+
+       var uno = val1[1];
+       var uno1 = val2[1];
+
+       var ultx = val1[contador];
+       var ulty = val2[contador];
+
+       alert("Valor 1 x : " + uno + "Valor 1 y : " + uno1);
+       alert("Valor actual x :" + ultx + "Valor actual y : " + ulty);
+     }
+
+</script>
+</head>
+<!-- <body onMouseMove="coordenadas(event);">-->
+<body onmousedown="coordenadas(event);">
+<form action="#">
+<label for="x">X:</label><input type="text" id="x">
+<label for="x">y:</label><input type="text" id="y">
+<br>
+<br>
+Contador : <input type="text" id="c" disabled>
+<br>
+<br>
+ContadorXY : <input type="text" id="d" disabled>
+<br>
+Puntos : <input type="text" id="response" disabled>
+<br>
+<br>
+<br>
+<br>
+<input type="button" id="response1" value="Submit">
+<form>
+</body>
+</html>
